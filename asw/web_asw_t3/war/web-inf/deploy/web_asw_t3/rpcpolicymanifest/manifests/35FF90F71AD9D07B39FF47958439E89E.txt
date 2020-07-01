@@ -1,2 +1,0 @@
-serviceClass: sonc.client.GreetingService
-path: 3714B30C16D0860F04B25EE9EB6BFA86.gwt.rpc

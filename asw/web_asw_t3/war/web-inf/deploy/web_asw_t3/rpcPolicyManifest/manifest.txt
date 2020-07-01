@@ -1,4 +1,0 @@
-# Module web_asw_t3
-# RPC service class, partial path of RPC policy file
-sonc.client.GreetingService, 3714B30C16D0860F04B25EE9EB6BFA86.gwt.rpc
-sonc.client.ManagerService, 9D67786C66F598DECFCDDB3FE2038CC5.gwt.rpc

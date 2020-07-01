@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Convert local variable &apos;DecisionTree.count().valuesLast&apos; in &apos;DecisionTree.count()&apos; to field&#x0D;&#x0A;- Original project: &apos;ID3&apos;&#x0D;&#x0A;- Original element: &apos;DecisionTree.count().valuesLast&apos;&#x0D;&#x0A;- Field name: &apos;valuesLasts&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" description="Convert local variable &apos;valuesLast&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;{ID3.java" name="valuesLasts" selection="1344 19" stamp="1526313978566" static="false" version="1.0" visibility="2"/>
-</session>

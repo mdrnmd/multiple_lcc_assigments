@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move element &apos;Manager.java&apos; to &apos;ShipsOnShips/src/sonc.game&apos;&#x0D;&#x0A;- Original project: &apos;_pasted_code_&apos;&#x0D;&#x0A;- Destination element: &apos;ShipsOnShips/src/sonc.game&apos;&#x0D;&#x0A;- Original element: &apos;sonc.game.Manager.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=ShipsOnShips/src&lt;sonc.game" element1="/src&lt;sonc.game{Manager.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1527285074128" units="1" version="1.0"/>
-</session>
