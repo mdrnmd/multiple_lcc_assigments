@@ -1,0 +1,74 @@
+package sonc.battle;
+
+public class Bullet extends Munition {
+
+	double heading, speed;
+	int damage, fireDelay;
+	
+	public Bullet(double heading) {
+		// get position from ship.
+	this.heading = heading;	
+	}
+	
+	static void setDamage(int damage) {
+		this.damage = damage;
+	}
+	
+	static int getDamage() {
+		return damage;
+	}
+	
+	static void setInitialSpeed(double speed) {
+		this.speed = speed;
+	}
+	
+	static double getInitialSpeed() {
+		return speed;
+	}
+	
+	static int getFireDelay() {
+		return fireDelay;
+	}
+	
+	static void setFireDelay(int fireDelay) {
+		this.fireDelay = fireDelay;
+	}
+	
+	@Override
+	double getMaxSpeed() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	double getMaxSpeedChange() {
+		
+	}
+	
+	double getMaxRotation() {
+		
+	}
+	
+	@Override
+	int fireDelay() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getSize() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	int getImpactDamage() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String getColor() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

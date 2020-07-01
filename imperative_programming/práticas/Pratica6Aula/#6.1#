@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+char maiuscula (char c)
+{
+if  (c>='a' && c<='<' );
+	return c-'a' + 'A';
+	

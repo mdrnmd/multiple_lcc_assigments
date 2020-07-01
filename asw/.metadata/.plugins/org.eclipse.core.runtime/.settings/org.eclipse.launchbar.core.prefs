@@ -1,0 +1,13 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:AllTests (2),org.eclipse.launchbar.core.descriptorType.default\:WorldViewer,org.eclipse.launchbar.core.descriptorType.default\:AllTests,org.eclipse.launchbar.core.descriptorType.default\:TrieTest,org.eclipse.launchbar.core.descriptorType.default\:LeafTrieTest,org.eclipse.launchbar.core.descriptorType.default\:sonc.quad,org.eclipse.launchbar.core.descriptorType.default\:sonc.quad (1),org.eclipse.launchbar.core.descriptorType.default\:AllTests (1),org.eclipse.launchbar.core.descriptorType.default\:ID3,org.eclipse.launchbar.core.descriptorType.default\:test,org.eclipse.launchbar.core.descriptorType.default\:MovieTest,org.eclipse.launchbar.core.descriptorType.default\:ManagerTest,org.eclipse.launchbar.core.descriptorType.default\:defautl,org.eclipse.launchbar.core.descriptorType.default\:ASMifier,org.eclipse.launchbar.core.descriptorType.default\:Web_asw_t3.html
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:AllTests\ (1)/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:AllTests\ (1)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:AllTests/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:AllTests/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:ID3/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:TrieTest/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Web_asw_t3.html/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:test/activeLaunchMode=run

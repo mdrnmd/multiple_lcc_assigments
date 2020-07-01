@@ -1,0 +1,6 @@
+total 12
+-rw------- 1 rafael rafael    0 Abr  4 17:30 config-err-2XGC1e
+drwx------ 3 root   root   4096 Abr  4 17:28 systemd-private-e5109af5db254e86ae96e75b14b97e3a-colord.service-EWMoNS
+drwx------ 3 root   root   4096 Abr  4 17:28 systemd-private-e5109af5db254e86ae96e75b14b97e3a-rtkit-daemon.service-7V056l
+drwx------ 3 root   root   4096 Abr  4 17:28 systemd-private-e5109af5db254e86ae96e75b14b97e3a-systemd-timesyncd.service-pBDsEy
+-rw-rw-r-- 1 rafael rafael    0 Abr  4 17:30 unity_support_test.0

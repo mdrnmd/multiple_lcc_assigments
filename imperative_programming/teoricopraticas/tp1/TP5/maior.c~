@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(void) {
+  int seq, num, maior, conta=1 ;
+  printf("Insira o valor da sequencia de inteiros:");
+  scanf("%d" ,&seq);
+  scanf(" %d " ,&num);
+  maior = num;
+  while (conta < seq) {
+    scanf(" %d " ,&num);
+    if (num > maior)
+      maior = num;
+  }
+  printf("%d" ,maior);
+  return 0;
+}

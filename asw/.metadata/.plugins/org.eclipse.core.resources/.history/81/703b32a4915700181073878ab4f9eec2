@@ -1,0 +1,182 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+
+class DecisionTree {
+	int depth;
+	List<List<String>> data;
+	int nodeCount=0;
+	int numAttributes=-1;
+	HashMap<String, Boolean> atribNames = new HashMap<String, Boolean>();
+	HashMap<String, Integer> domainCount = new HashMap<String,Integer>();
+	// TAlvez mover hasmap para o node;
+
+	public DecisionTree(List<List<String>> data) {
+		//get data, count attributes
+		this.data = data;
+		List<String> line = data.get(0);
+		for (int i = 0; i < line.size(); i++) {
+			numAttributes++;
+			atribNames.put(line.get(i), false);
+		}
+	}
+
+	/*
+	 * Generate Tree
+	 */
+	public boolean generateTree() {
+		Node root = new Node();
+		root.parentNode = null;
+		root.depth = 0; 
+		root.data = data;
+		root.entropy = count(root.data);
+		root.threshold = null;
+		root.atribute = -1;
+		nodeCount++;
+
+		findBestAttribute();
+		// make root.childrenNodes;
+
+		return false;
+	}
+
+	int findBestAttribute() {
+		return 0;
+	}
+
+	//int[]
+	int count(List<List<String>> data) {   
+
+		Map<String, Integer> counter = new HashMap<String,Integer>();
+
+		data.remove(0);
+		String valuesLasts;
+		int i=0;
+		for(List<String> line: data) {
+			valuesLasts = line.get(line.size()-1);
+			counter.put(valuesLasts,0);
+			i++;
+		}
+		System.out.println(counter.size());
+
+		for(List<String> line: data) {
+			valuesLasts = line.get(line.size()-1);
+			int opc = counter.get(valuesLasts);
+			counter.put(valuesLasts, opc+1);
+		}
+		
+		System.out.println(counter);
+		return 1;
+	}
+
+	double calculateEntropy(List<List<String>> data) { 
+		count(data);
+		int[] occurrences = null;
+		double entropy;
+		double totalOccurrences = 0;
+		int counter = 0;
+		for (int i = 0; i < occurrences.length; i ++) {
+			if ((double)occurrences[i] == 0)
+				counter++;
+			totalOccurrences += (double)occurrences[i];
+		}
+		if (counter == occurrences.length - 1)
+			return 0;
+		if (totalOccurrences == 0)
+			return 0;
+		entropy = 0;
+		for (int i = 0; i < occurrences.length; i++) {
+			if (occurrences[i] != 0)
+				entropy += (-1) * (occurrences[i]/totalOccurrences) * (Math.log10(occurrences[i]/totalOccurrences) / Math.log10(2)); 
+		}
+		return entropy;
+	}
+
+	/*
+	 * Question the tree
+	 */
+	public String question(String line) {
+		String answer = new String(); 
+		return answer;
+	}
+
+	public void print() {
+
+	}
+}
+
+class Node {
+	Node[] childrenNodes;
+	Node parentNode;
+	int depth; 
+	int atribute;
+	String threshold;
+	double entropy;
+	List<List<String>> data; 	
+
+	public Node() {
+	}
+}
+
+public class ID3  {
+
+	static public List<List<String>> readFile(String path) {
+		// this gives you a 2-dimensional array of strings
+		List<List<String>> lines = new ArrayList<>();
+
+		File file= new File(path);
+		Scanner inputStream;
+
+		try {
+			inputStream = new Scanner(file);
+			while(inputStream.hasNext()) {
+				String line= inputStream.next();
+				String[] values = line.split(",");
+				// this adds the currently parsed line to the 2-dimensional string array
+				lines.add(Arrays.asList(values));
+			}
+			inputStream.close();
+			return lines;
+		}
+		catch (FileNotFoundException e) {
+			return null;
+		}
+	}
+
+	static public void printMatrix(	List<List<String>> lines) {
+		for(List<String> line: lines) {
+			for (String value: line) {
+				System.out.print( " " + value);
+			}
+			System.out.println();
+		}
+	}
+
+	public static void main(String[] args) {
+		List<List<String>> matrix = new ArrayList<>();
+		matrix = readFile("./weather.csv");
+		if(matrix == null) {
+			System.out.println("Unable to read file");
+			System.exit(0);
+		}
+		else {
+			printMatrix(matrix);
+			DecisionTree tree = new DecisionTree(matrix);
+			if(tree.generateTree() == false) {
+				System.out.println("\nFailed to generate tree");
+				System.exit(0);
+			}
+			else {
+
+				tree.print();
+			}
+		}
+	}
+}

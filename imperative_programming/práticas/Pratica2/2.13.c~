@@ -1,0 +1,14 @@
+#include <stdio.h>
+#define PROVAS 4
+int main() {
+  float media;
+  int num, conta=0, soma;
+  while (conta < PROVAS) {
+    printf("Introduza o valor da prova");
+    scanf("%d" ,&num);
+    soma+=num;
+  }
+  media = ( (float)soma )/( (float)conta );
+  printf("A media do aluno e:%.2f\n");
+  return 0;
+}

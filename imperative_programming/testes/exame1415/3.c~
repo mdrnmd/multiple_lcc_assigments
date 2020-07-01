@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main () {
+  int i,j, falsos [4], inseridos[20], soma=0;
+  
+  for (i=0; i<4; i++)
+    scanf("%d" ,&falsos[i]);
+
+  scanf("%d" ,&inseridos[0] );
+
+  for (i=0 ; inseridos[i] !=0 ; i++)
+    scanf("%d" ,&inseridos[i]);
+
+  for (i=0; i<4 ; i++) {
+    for( j=0 ; inseridos[j]!=0 ; j++) {
+      if (falsos[i] == inseridos[j])
+	falsos[i] = 1;
+    }
+  }
+
+  for (i=0; i<4; i++) {
+    if (falsos[i] == 1)
+      soma++;
+    
+  }
+  
+  
+  printf("Utilizados:%d\n" ,soma); 
+  
+  return 0 ;
+}

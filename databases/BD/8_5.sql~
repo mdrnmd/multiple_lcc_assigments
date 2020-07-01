@@ -1,0 +1,8 @@
+select customer.first_name, customer.last_name from customer, rental, film, inventory where 
+       film.film_id =inventory.film_id and 
+       inventory.inventory_id=rental.inventory_id and
+       rental.customer_id =customer.customer_id and
+       rental.return_date is not null and
+       film.rental_duration <datediff(rental.return_date, rental.rent_date)
+        
+       order by 1,2;

@@ -1,0 +1,17 @@
+#include <stdio.h>
+#define SEQ 5
+
+int main () {
+  int soma = 0 , nvalores = 0, num ;
+  while (nvalores < SEQ ) {
+    printf("Introduza um numero inteiro: ");
+    scanf ("%d" ,&num );
+    nvalores++
+    if (num % 2 == 0) {
+      soma = soma + num;
+    }
+  }
+  printf(" A soma da sequencia e:%d\n" ,soma);
+  return 0;
+}
+      

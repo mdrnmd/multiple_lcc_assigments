@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <signal.h>
+#include <unistd.h>
+#include <sys/types.h>
+
+int main() {
+  
+pid_t t = fork();
+  
+  if (p == 0) { // codigo do filho (novo processo)
+    printf("FILHO\n");
+  } else { // codigo do pai (processo inicial)
+    printf("PAI\n");
+  }

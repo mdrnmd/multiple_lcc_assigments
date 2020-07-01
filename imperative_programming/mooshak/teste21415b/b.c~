@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main()  {
+  int n, v[30] , conta, i, aux;
+
+  for(i=0 ; i<n; i++) {
+    scanf("%d", &aux);
+    v[aux]++;
+  }
+  scanf("%d" ,&aux);
+  for (i=0 ; i<n; i++) {
+    if v[i] > v[aux]
+	  conta ++;
+  }
+  return 0;
+}

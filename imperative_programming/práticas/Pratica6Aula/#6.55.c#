@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main () {
+  float valores [ 10000];
+  int conta[10]={0} ,i;
+  for (i=0; i<1000; i++)
+    scanf ("%f", &valores [i]);
+  
+
+  for (í=0 ; i<1000; i++ ) {
+    // analisar
+    if(valores[i]<1.55) conta[0]++;
+    else if(valores[i]<1.60) conta[1]++;
+    

@@ -1,0 +1,132 @@
+package sonc.shared;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import sonc.utils.WorldViewer.Oblong;
+import sonc.utils.WorldViewer.Score;
+
+public class Movie extends java.lang.Object {
+
+	// Main Class
+	public Movie() {
+
+		List<Frame> frames = new ArrayList<>();
+
+		public void newFrame() {
+			Frame paint = new Frame();
+
+			for(Oblong oblong: oblongs) {
+				int x = oblong.getX();
+				int y = oblong.getY();
+				float heading = oblong.getHeading();
+				int size = oblong.getSize();
+				String color = oblong.getColor();
+				addOblong(x, y, heading, size, color);
+			}
+
+			for(Score score: scores) {
+				String name = score.getName();
+				int points = score.getPoints();
+				int status = score.getStatus();
+				addScore(name, points, status);
+			}
+
+			public void addOblong(int x, int y, float heading, int size, String color)
+					throws IllegalStateException {
+				if(Fa)
+			}
+
+			}
+
+			public void addScore(java.lang.String name, int points, int status) 
+					throws IllegalStateException {
+
+			}
+
+			public List<Movie.Frame> getFrames() {
+				return frames;
+			}
+		}
+
+		// Nested Class
+		static class Frame { 
+
+			List<Oblong> oblongs = new ArrayList<>();
+			List<Score> scores = new ArrayList<>(); 
+
+			public Frame() {
+
+			}
+
+			public List<Movie.Oblong> getOblongs() {
+				return oblongs;
+			}
+
+			public List<Movie.Score> getScores() {
+				return scores;
+			}
+		}
+
+		// Nested Class
+		static class Oblong {
+			String color;
+			float heading;
+			int	size;
+			int	x,y;
+
+			public Oblong(int x, int y, float heading, int size, String color) {
+				super();
+				this.x = x;
+				this.y = y;
+				this.heading = heading;
+				this.size = size;
+				this.color = color;
+			}
+
+			public String getColor() {
+				return color;
+			}
+
+			public float getHeading() {
+				return heading;
+			}
+
+			public int getSize() {
+				return size;
+			}
+
+			public int getX() {
+				return x;
+			}
+
+			public int getY() {
+				return y;
+			}
+
+		}
+
+		// Nested Class
+		static class Score {
+			String name;
+			int points, status;
+
+			public Score(String name, int points,int status) {
+				this.name = name;
+				this.points = points;
+				this.status = status;
+			}
+
+			public String getName() {
+				return name;
+			}
+
+			public int getPoints() {
+				return points;
+			}
+
+			public int getStatus() {
+				return status;
+			}
+		}
+	}

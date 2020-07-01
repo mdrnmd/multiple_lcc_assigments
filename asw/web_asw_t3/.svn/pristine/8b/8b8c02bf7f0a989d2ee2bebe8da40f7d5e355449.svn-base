@@ -1,0 +1,35 @@
+/** Add css rules here for your application. */
+
+
+/** Example rules used by the template application (remove for your app) */
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #777777;
+  margin: 40px 0px 50px;
+  text-align: center;
+  font-family: Lucida Console;
+  margin-bottom: 50px;
+  background-color: lightblue;
+}
+
+.deckpanel {
+  border: 1px solid #BBBBBB;
+  padding: 3px;
+}
+
+.login {
+	margin-top: 45px;
+	border: 1px solid #BBBBBB;
+	padding: 3px;
+}
+
+.buttonbar {
+	float: right;
+	border: 1px;
+}
+
+.inputcommand {
+	font-size: 14px;
+}

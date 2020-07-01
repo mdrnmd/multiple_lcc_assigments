@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <readline/readline.h>
+#include <readline/history.h>
+#include <string.h>
+
+
+#define MAXARGS 100
+typedef struct command {
+  char *cmd;              // string apenas com o comando
+  int argc;               // número de argumentos
+  char *argv[MAXARGS+1];  // vector de argumentos do comando
+} COMMAND;
+
+COMMAND parse(char *linha);
+void print_parse(COMMAND com);
+
+int main() {
+  char *linha;
+  COMMAND com;
+
+  while (1) {
+    if ((linha = readline("my_prompt$ ")) == NULL)
+      exit(0);
+    if (strlen(linha) != 0) {
+      add_history(linha);
+      com = parse(linha);
+      print_parse(com);
+    }
+    free(linha);
+  }
+}
+
+COMMAND parse(char *linha) {
+  COMMAND command;
+  strcpy(command.cmd, linha);  
+    
+    
+    }
+
+void print_parse(COMMAND com) {
+  // ...
+}

@@ -1,0 +1,20 @@
+#include <stdio.h>
+#defne MAX 20
+int main() {
+  int div[MAX], contandor[MAX]={0};
+  int i,n, num;
+  scanf("%d", &n);
+  for (i=0; i<n; i++) {
+    scanf("%d", &div[i]);
+  }
+  scanf("%d" ,&num);
+  while (num != -1) {
+    for(i=0; i<n; i++) {
+      if (div[i] )
+	if( num%div[i]==0)
+	  contador[i]++;
+	else if (num == 0) contarodr [i] ++;}
+    scanf("%d", &num);
+  }
+  return 0;
+}

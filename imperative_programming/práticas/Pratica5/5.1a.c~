@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<stdlib.h> 
+
+#define RAND_MAX 8
+int main() {
+  int n1, n2 ;
+  n1= srand(time(NULL)) +1 ;
+  n2= srand(time(NULL) +1) +1 ;
+  printf("%d, %d" ,n1 ,n2);
+  return 0;
+}
+  
+  
+  

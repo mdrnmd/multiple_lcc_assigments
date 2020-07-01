@@ -1,0 +1,3 @@
+select country , count(distinct staff_id) from store left outer join staff 
+       where store.country =staff.country
+       	     order by 1; 

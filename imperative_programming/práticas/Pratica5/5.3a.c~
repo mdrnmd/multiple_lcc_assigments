@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<time.h>
+#include<stdlib.h>
+
+
+int randomizer() {
+  
+  srand(time(NULL));
+  return rand()%10 +1;
+int main() {
+  int x ;
+  x= randomizer();
+  printf("%d" ,x);
+  return 0;
+}

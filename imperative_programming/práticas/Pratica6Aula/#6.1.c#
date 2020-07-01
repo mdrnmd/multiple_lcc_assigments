@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main () {
+  char c;
+  int maius , minus, digits;
+
+  while ( (c=getchar()) != '\n' )  {
+
+
+
+
+
+
+
+
+
+    
+  return 0;
+}
+
+  

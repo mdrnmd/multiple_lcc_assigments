@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+  int num, soma=1, aux;
+  aux= num;
+  scanf("%d" ,&num );
+  while (num > 0) {
+    soma = num * soma;
+    num--}
+  printf( "fatorial de %d e:%d\n" ,aux ,soma);
+  return 0;
+}

@@ -1,0 +1,24 @@
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+
+  pid_t pid;
+  int a=0, b=0, c=0;
+  
+  if((pid = fork()) < 0) {
+    /*fork failed */
+
+  }
+  else if (pid == 0) {
+    a++;
+    // printf("pid: %d, a: %d, b: %d, c: %d\n", getpid(), a, b, c);
+    //exit(1);
+  }
+  else
+    b++;
+  a++; b++; c++;
+  printf("pid: %d, a: %d, b: %d, c: %d\n", getpid(), a, b, c);
+  return 0;
+}

@@ -1,0 +1,45 @@
+package sonc.quad;
+
+public class NodeTrie<T extends HasPoint> extends Trie<T>{
+	
+	java.util.Map<Trie.Quadrant,Trie<T>> tries;
+
+	NodeTrie(double topLeftX, double topLeftY, double bottomRightX, double bottomRightY) {
+		super(topLeftX, topLeftY, bottomRightX, bottomRightY);
+	}
+
+	T find(T point) {
+		Trie.Quadrant j = valueOf(point);
+
+	}
+
+	Trie.Quadrant quadrantOf(T point) {
+
+	}
+
+	Trie<T> insert(T point) {
+
+
+	}
+
+	Trie<T> insertReplace(T point) {
+
+	}
+
+	void delete(T point) {
+
+	}
+
+	void collectNear(double x,double y, double radius, java.util.Set<T> nodes) {
+
+	}
+
+	void collectAll(java.util.Set<T> points) {
+
+	}
+
+	public java.lang.String toString() {
+		String asas = "asas";
+		return asas;
+	}
+}

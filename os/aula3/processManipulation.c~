@@ -1,0 +1,17 @@
+#include <unistd.h>
+
+int main() {
+
+  pid_t pid;
+  if((pid = fork()) < 0) {
+    /*fork failed */
+
+  }
+  else if  (pid = = 0)
+    a++;
+  else
+    b++;
+  a++; b++; c++;
+ printf("pid: %d, a: %d, b: %, c: %d\n", getpid(), a, b, c);
+  return 0;
+}

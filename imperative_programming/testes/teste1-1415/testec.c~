@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main () {
+  float num, max=0;
+  int record;
+  record = 0;
+  scanf("%f" ,&num);
+  while (num != -1 ) {
+    if (num > max) {
+      max=num;
+      record++;
+    }
+    scanf("%f" ,&num);
+  }
+  printf ("%d vezes\n" ,record);
+  return 0;
+}
+
+    
